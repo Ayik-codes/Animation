@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carausal</title>
+    <style>
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: rgb(56, 67, 67);
+            background: transparent;
+        }
+        .container-img {
+            width: 40vw;
+            height: 30rem;
+            border-radius: 1rem;
+            box-shadow: rgba(100, 100, 110, 0.2) 0px 7px 29px 0px;
+            background-image: url('pexels-eberhardgross-2437293.jpg'); /* Use forward slashes */
+            background-size: cover;
+            animation: photo 15s linear infinite;
+        }
+        @keyframes photo {
+            0%{
+                background-image: url('pexels-eberhardgross-2437293.jpg');
+
+            }
+            40%{
+                background-image: url('pexels-baskincreativeco-1480806.jpg');
+
+            }
+            60%{
+                background-image: url('pexels-njeromin-12801806.jpg');
+
+            }
+            80%{
+                background-image: url('pexels-ready-rey-13880758-6774396.jpg');
+
+            }
+            100%{
+                background-image: url('pexels-eberhardgross-2437293.jpg');
+
+            }
+            
+        }
+         
+
+        
+    </style>
+</head>
+<body>
+    <div class="container-img"></div>
+    
+</body>
+</html>
